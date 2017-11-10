@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.camiloalzate.takumprueba.model.Productos" table="Productos">
+        <id name="Prodcodi" type="java.lang.Long">
+            <column name="Prodcodi" />
+            <generator class="identity" />
+        </id>
+        <property name="Prodnomb" type="java.lang.Long">
+            <column name="PRODNOMB" length="20" not-null="true" />
+        </property>
+        <property name="Proddesc" type="string">
+            <column name="PRODDESC" length="100" not-null="true" />
+        </property>
+        <property name="Prodcost" type="java.lang.Long">
+            <column name="PRODCOST" length="10" not-null="true" />
+        </property>
+        <property name="Prodcapr" type="java.lang.Long">
+            <column name="PRODCAPR" length="3" not-null="true" />
+        </property>
+        <property name="Produsua" type="java.lang.Long">
+            <column name="PRODUSUA" length="3" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

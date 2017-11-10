@@ -1,0 +1,8 @@
+com\camiloalzate\takumprueba\configuration\HelloWorldConfiguration.class
+com\camiloalzate\takumprueba\configuration\CORSFilter.class
+com\camiloalzate\takumprueba\controller\IndexController.class
+com\camiloalzate\takumprueba\model\User.class
+com\camiloalzate\takumprueba\controller\HelloWorldRestController.class
+com\camiloalzate\takumprueba\service\UserServiceImpl.class
+com\camiloalzate\takumprueba\configuration\HelloWorldInitializer.class
+com\camiloalzate\takumprueba\service\UserService.class

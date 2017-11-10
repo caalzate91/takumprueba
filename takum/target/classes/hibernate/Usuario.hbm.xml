@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.camiloalzate.takumprueba.model.Usuario" table="Usuario">
+        <id name="Usuacodi" type="java.lang.Long">
+            <column name="USUACODI" />
+            <generator class="identity" />
+        </id>
+        <property name="Usuaterc" type="java.lang.Long">
+            <column name="USUATERC" length="20" not-null="true" />
+        </property>
+        <property name="Usuanomb" type="string">
+            <column name="USUANOMB" length="100" not-null="true" />
+        </property>
+        <property name="Usuaapel" type="string">
+            <column name="USUAAPEL" length="100" not-null="true" />
+        </property>
+        <property name="Usuadire" type="string">
+            <column name="USUADIRE" length="100" not-null="false" />
+        </property>
+        <property name="Usuaemai" type="string">
+            <column name="USUAEMAI" length="100" not-null="false" />
+        </property>
+        <property name="Usuarol" type="java.lang.Long">
+            <column name="USUAROL" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<!-- Usuario business object -->
+	<bean id="usuarioBo" class="com.camiloalzate.takumprueba.bo.UsuarioBOImpl">
+		<property name="usuarioDao" ref="usuarioDao" />
+	</bean>
+
+	<!-- Usuario Data Access Object -->
+	<bean id="usuarioDao" class="com.camiloalzate.takumprueba.dao.UsuarioDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- Productos business object -->
+	<!-- <bean id="productosBo" class="com.camiloalzate.takumprueba.bo.ProductosBOImpl">
+		<property name="productosDao" ref="productosDao" />
+	</bean>-->
+
+	<!-- Productos Data Access Object -->
+	<!-- <bean id="productosDao" class="com.camiloalzate.takumprueba.dao.ProductosDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>-->
+
+</beans>
